@@ -241,26 +241,20 @@ body {
         flex-direction: column;
         text-align: center;
     }
-
-}
-    #hero{
-        justify-content: center;
+    #new-arrival {
+        justify-content: space-around;
         align-items: center;
         display: flex;
         flex-wrap: wrap;
-        flex-basis: 20%;
-        flex-direction: column;
+        flex-basis: 10%;
 
     }
      
-    /*#newcontain {
-        display: flex;
-        flex-wrap: wrap;
-        flex-basis: 20%;
+    #newcontain {
         margin-top: 10px;
         margin-bottom: 10px;
     }
-*/
+
     #newlet{
         margin-left: 8px;
         justify-content: center;
