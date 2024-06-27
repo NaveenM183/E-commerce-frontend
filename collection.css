@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0px;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    height: 40px;
+    margin-left:0px ;
+    box-shadow: 0 0 10px rgb(9, 1, 1);
+}
+
+#icons{
+    display: flex;
+    column-gap: 17px;
+}
+
+#icon a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#icon a:hover{
+    color: cyan;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: 0s;
+}
+
+#toggle{
+    display: none;
+}
+
+#sideicons{
+    background-color: antiquewhite;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+    position: fixed;
+    top: 0px;
+    left: -80%;
+    transition: 1s;
+}
+#goin{
+display: none;
+}
+#sideicon a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 40px;
+    display: flex;
+}
+
+#par{
+    font-size: 20px;
+    font-weight: 400;
+    width: fit-content;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+#sideicon a:hover{
+    text-decoration: underline;
+}
+
+#par:hover, #bar:hover{
+    cursor: pointer;
+}
+
+#products{
+    padding: 20px;
+}
+
+#search2{
+    padding: 10px;
+    display: flex;
+    border: 2px solid;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+#search2 input{
+    border: none;
+    font-weight: 500;
+    width: 95%;
+    padding: 5px;
+    outline: none;
+}
+
+#int1::placeholder{
+    color: black;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+#psection{
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+#pcontain {
+    font-weight: 400;
+    padding: 10px;
+    text-align: center;
+    flex-basis: 30%;
+}
+
+#pcontain p{
+    padding-top: 8px;
+}
+
+#pcontain img{
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+}
+
+#footer{
+    background-color: rgb(163, 206, 206);
+    padding: 20px;
+    align-items: center;
+    height: 200px;
+}
+
+#fcontain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#icons1 i{
+    margin: 10px;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 600px) {
+    #toggle{
+        display: block;
+    }
+    
+    #icons {
+        display: none;
+    }
+    
+    #navbar {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+
+    #sideicons {
+      width:fit-content;
+     }
+    
+    #products {
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis:20% ;
+    }
+    
+    #search2 {
+        width: 90%;
+        margin: auto;
+    }
+    
+    #psection {
+        align-items: center;
+    }
+    
+    #pcontain {
+        flex-basis: 20%;
+        padding: 10px;
+    }
+    
+    #footer {
+        height: auto;
+    }
+}

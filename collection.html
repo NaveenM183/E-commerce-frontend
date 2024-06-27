@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wrangle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="collection.css">
+</head>
+<body>
+    <nav id="navbar">
+        <h1>Wrangle</h1>
+        <div id="icons">
+            <p id="icon"><a href="index.html">Home</a></p>
+            <p id="icon"><a href="collection.html">Collections</a></p>
+            <p id="icon"><a href="contact.html">Contact</a></p>
+        </div>
+        <div id="toggle">
+            <i id="bar" onclick="comein()" class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    <div id="goin">
+    <div id="sideicons">
+        <p id="par"><i onclick="comout()" class="fa-solid fa-xmark"></i></p>
+        <div>
+            <p id="sideicon"><a href="index.html">Home</a></p>
+            <p id="sideicon"><a href="collection.html">Collections</a></p>
+            <p id="sideicon"><a href="contact.html">Contact</a></p>
+        </div>
+    </div>
+    </div>
+    
+    <div id="products">
+        <form id="search2">
+            <input id="int1" type="text" placeholder="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </form>
+
+        <div id="psection">
+            <div id="pcontain">
+                <img src="https://img.freepik.com/free-photo/positive-passionate-woman-dress-with-hands-hair_23-2148054937.jpg?t=st=1718977385~exp=1718980985~hmac=d87c6439093a67f4357b735378f1b90806d1d3444260c628148d8946ae042d0d&w=740" alt="">
+                <p id="pname">Kurta</p>
+            </div>
+            <div id="pcontain">
+                <img src="https://img.freepik.com/free-photo/young-woman-standing-front-green-shutter-wearing-coat_23-2148148171.jpg?t=st=1718978027~exp=1718981627~hmac=70fe467eedc729eca39ea117be67bb5304a7516baf5a839b12703bbcb1432f2a&w=740" alt="">
+                <p id="pname">Black top</p>
+            </div>
+            <div id="pcontain">
+                <img src="https://img.freepik.com/free-photo/hanging-pullover_23-2147704075.jpg?t=st=1718978227~exp=1718981827~hmac=1e90a0e201ef7da43ee5e13edd391378550e639adef35dbda25dcabe7c99a041&w=740" alt="">
+                <p id="pname">T shirt</p>
+            </div>
+            <div id="pcontain">
+                <img src="https://img.freepik.com/premium-photo/model-child-canvas-tshirt-mockup_923389-944.jpg?w=740" alt="">
+                <p id="pname">Oversized T shirt</p>
+            </div>
+            <div id="pcontain">
+                <img src="https://img.freepik.com/free-photo/men-clothes-set_1203-8041.jpg?t=st=1718978288~exp=1718981888~hmac=2a1ba35ca94958aa12a02bb838d2e0f392ff4b121a585fe32720c861064bd056&w=740" alt="">
+                <p id="pname">Combo</p>
+            </div>
+            <div id="pcontain">
+                <img src="https://img.freepik.com/free-photo/stylish-young-woman-with-long-hair-wearing-pink-hat-her-head_23-2148130391.jpg?t=st=1718977845~exp=1718981445~hmac=1bc376ccffa8d8310ee97332519d0651b7c47b97411ed66d0a589f4e1daa3ae5&w=740" alt="">
+                <p id="pname">Top</p>
+            </div>
+            <div id="pcontain">
+                <img src="https://img.freepik.com/free-photo/simple-polo-shirt-man-wearing-suit-business-look-photoshoot_53876-119736.jpg?t=st=1718978672~exp=1718982272~hmac=1c5203ca4a978ea423e5f960cfdd8cc7800736beae3960a70a7a24ea1b845f45&w=740" alt="Product 7">
+                <p id="pname">Coat</p>
+            </div>
+            <div id="pcontain">
+                <img src="https://img.freepik.com/premium-photo/man-wearing-trendy-high-quality-thick-checked-double-pocketed-clothing-fashion-photography_758367-128973.jpg?w=740" alt="">
+                <p id="pname">Oversized shirt</p>
+            </div>
+            <div id="pcontain">
+                <img src="https://img.freepik.com/free-photo/boy-relaxing-spending-time-sea_23-2148606063.jpg?t=st=1718979025~exp=1718982625~hmac=31e315924e235e8b600373d89d27a6e1a9653f0156899e65f9ea966dd8f8c2ef&w=740" alt="">
+                <p id="pname">White T shirt</p>
+            </div>
+            <div id="pcontain">
+                <img src="https://img.freepik.com/free-photo/handsome-working-man-checking-phone_23-2148336851.jpg?t=st=1718979143~exp=1718982743~hmac=5b089ee934cbc3a2646888c0992c3d39a6051595b5167a1f42de23261cb40cab&w=740" alt="">
+                <p id="pname">White shirt</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div id="fcontain">
+            <h2>Wrangle</h2>
+            <p>The latest fashion news, beauty coverage, celebrity style, fashion week updates, culture news and videos on trends</p>
+            <div id="icons1">
+                <i class="fa-brands fa-instagram" style="color: white;"></i>
+                <i class="fa-brands fa-twitter" style="color: white;"></i>
+                <i class="fa-brands fa-facebook" style="color: white;"></i>
+            </div>
+            <h4>@ 2024 wrangle.com</h4>
+        </div>
+    </div>
+
+    <script src="collection.js"></script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0px;
+    
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    height: 40;
+    margin-left:0px ;
+    box-shadow: 0 0 10px rgb(9, 1, 1);
+}
+#icons{
+    display: flex;
+    column-gap: 17px;
+}
+#icon a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+#icon a:hover{
+    color: cyan;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: 0s;
+}
+#toggle{
+    display: none;
+}
+
+#sideicons{
+    background-color: antiquewhite;
+    width: fit-content;
+    display: none;
+    flex-direction: column;
+    column-gap: 20px;
+    position: fixed;
+    top: 0px;
+    left:-150%;
+    transition: 1s;
+}
+#goin{
+    display: none;
+}
+#sideicon a{
+    text-decoration:none;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 40px;
+    display: flex;
+}
+#par{
+    font-size: 20px;
+    font-weight: 400;
+    width: fit-content;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+#sideicon a:hover{
+    text-decoration:underline;
+}
+#par:hover,#bar:hover{
+    cursor: pointer;
+}
+
+
+
+.contact-container
+{
+    margin: 20px;
+    margin-top:50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#ccontainer{
+    width:fit-content;
+    height: fit-content;
+    border: 1px;
+    border-radius: 20px; 
+    display: flex;
+    box-shadow: 0 0 15px black ;
+	background-color: black;
+    
+}
+#imgc{
+    width:fit-content;
+    height: 400;
+    flex-direction: column;
+    border-top-left-radius: 20px; 
+    border-bottom-left-radius: 20px; 
+}
+#contactb{
+    border-top-right-radius: 20px; 
+    border-bottom-right-radius: 20px; 
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contactb h2{
+    padding: 10px;
+
+}
+#contactb input{
+    display: flex;
+    width:90%;
+    height: 30px;
+    padding: 20px;
+    margin: 10px;
+	margin-right: auto;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+}
+#contactb input::placeholder,textarea::placeholder{
+    color: black;
+    font-weight: 500;
+    font-size: 17;
+}
+#contactb textarea{
+    display: flex;
+    width:90%;
+    height: 60px;
+    padding: 20px;
+    margin: 10px; 
+    margin-bottom: 10px;
+	margin-right: auto;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+}
+#contactb button{
+    background-color: rgb(95, 162, 179);
+color: white;
+border: none;
+width: 95%;
+margin: 10px;
+padding: 10px;
+border-radius: 10px;
+font-size: 18;
+font-weight: 550;
+cursor: pointer;
+transition: transform .5s;
+
+}
+ 
+.btn5:active{
+    transform: scale(1.1);
+}
+
+
+#footer{
+    background-color:rgb(163, 206, 206);
+    padding: 20px;
+    align-items: center;
+    height: auto;
+
+}
+#fcontain{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 20px;
+}
+#icons1 i{
+    margin: 10px;
+    font-size: 25px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #icons {
+        display: none;
+    }
+
+    #toggle {
+        display: block;
+    }
+
+    #sideicons {
+        display: flex;
+        width: fit-content;
+        z-index: 1;
+    }
+
+    #sideicons.active {
+        left: 0;
+    }
+    
+    #ccontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #imgc {
+        width: 100%;
+        height: auto;
+        border-radius: 20px 20px 0 0;
+    }
+
+    #contactb {
+        border-radius:  0 0 20px 20px;
+		width: auto;
+		margin: 10px;
+		height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    #contactb input, #contactb textarea {
+        width: auto;
+    }
+
+	
+    #ccontainer {
+        width: auto;
+        box-shadow: 0 0 15px ;
+    }
+
+    #contactb button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #toggle{
+    display: block;
+}
+#icons,#img1,#sercon1{
+    display: none;
+}
+#sercon2{
+    flex-direction: column;
+}
+}
+
+#goin{
+    display: none;
+}
+
+
+
+
+
